@@ -1,0 +1,166 @@
+.quienYo {
+    display: grid;
+    grid-template-columns: 0.5fr 1fr 1fr 0.5fr;
+    grid-template-rows: 2.5fr 0.5fr 1.5fr 1.5fr;
+    grid-auto-columns: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "textos textos textos fotoPerfil"
+        "plataformas plataformas plataformas plataformas"
+        "plataformas-ind plataformas-ind plataformas-ind plataformas-ind"
+        "plataformas-ind plataformas-ind plataformas-ind plataformas-ind";
+    justify-items: stretch;
+    width: 100%;
+
+    .textos {
+        color: $color_1;
+        grid-area: textos;
+        font-family: $font-family_3;
+        font-size: 2rem;
+        margin-bottom: 2rem;
+        padding: 5rem;
+    }
+
+    .fotoPerfil {
+        grid-area: fotoPerfil;
+        display: flex;
+        align-items: center;
+        width: 30rem;
+        padding: 2rem;
+
+        .gifGato {
+            width: 90%;
+            border-radius: 50%;
+            padding: 1rem;
+            margin-bottom: 2rem;
+        }
+    }
+
+    .plataformas {
+        grid-area: plataformas;
+        font-family: $font-family_1;
+        text-align: center;
+        font-size: 6rem;
+        text-shadow: 10px 6px 5px #424949;
+        padding: 0px;
+    }
+
+    .plataformas-ind {
+        grid-area: plataformas-ind;
+        @include flex-j-center;
+        flex-wrap: wrap;
+        align-items: center;
+
+        .desc {
+            color: $color_1;
+        }
+
+        .logoSteam {
+            grid-area: logoSteam;
+            padding-left: 8rem;
+            width: 25%;
+        }
+
+        .descripcionSteam {
+            grid-area: descripcionSteam;
+            @include txt-descripcion;
+        }
+
+        .descripcionEpic {
+            grid-area: descripcionEpic;
+            display: flex;
+            justify-content: flex-end;
+            @include txt-descripcion;
+        }
+
+        .logoEpic {
+            grid-area: logoEpic;
+            @include flex-j-center;
+            width: 25%;
+
+            .logo-epic {
+                width: 7rem;
+            }
+        }
+
+        .logoUplay {
+            grid-area: logoUplay;
+            @include flex-j-center;
+            width: 25%;
+
+            .logo-uplay {
+                width: 7rem;
+            }
+        }
+
+        .descripcionUplay {
+            grid-area: descripcionUplay;
+            display: flex;
+            justify-content: flex-end;
+            @include txt-descripcion;
+        }
+
+        .logoBlizzard {
+            grid-area: logoBlizzard;
+            padding-left: 5rem;
+            width: 25%;
+
+            .blizzard {
+                width: 13rem;
+            }
+        }
+
+        .descripcionBlizzard {
+            grid-area: descripcionBlizzard;
+            width: 25%;
+            font-size: 4vh;
+
+            .fontBlizz {
+                font-family: $font-family_3;
+                font-size: 4vh;
+            }
+        }
+    }
+}
+
+form {
+    @include flex-j-center;
+    margin: 10rem;
+
+    .formulario {
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .form-label {
+            color: $color_1;
+            font-family: $font-family_1;
+            font-size: 2.5rem;
+            text-align: center;
+        }
+    }
+}
+
+.btn-primary {
+    margin: 10px;
+    width: 5rem;
+    height: 3rem;
+    font-family: "ARCADECLASSIC" !important;
+    font-size: 1.5rem !important;
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #2E4053 !important;
+    --bs-btn-border-color: #2E4053 !important;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #0a0d11 !important;
+    --bs-btn-hover-border-color: #0a0d11 !important;
+    --bs-btn-focus-shadow-rgb: 49, 132, 253;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #2E4053 !important;
+    --bs-btn-active-border-color: #2E4053 !important;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: #2E4053 !important;
+    --bs-btn-disabled-border-color: #2E4053 !important;
+}

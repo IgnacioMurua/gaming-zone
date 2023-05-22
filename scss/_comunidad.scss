@@ -1,0 +1,35 @@
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.card {
+    width: 20rem;
+    margin: 1rem !important;
+}
+
+.card-body {
+    color: $color_1 !important;
+}
+
+.correccion-hg{
+    height: 22rem !important;
+}
+.correccion-hg-l{
+    height: 22rem !important;
+}
+
+.img-fluid {
+    height: 28rem !important;
+    width: 20rem !important;
+}
+
+.card-img-top{
+    width: 91% !important;
+    
+}
+.correccion-img-w{
+    width: 89% !important;
+}

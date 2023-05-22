@@ -1,0 +1,61 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    body {
+        background-image: url(../multimedia/fondo.png);
+        background-position: center center;
+        background-size: cover;
+        h2 {
+            font-family: $font-family_1;
+            font-size: 3rem !important;
+        }
+        
+        img {
+            width: 40%;
+            margin: 1rem;
+        }
+        .iframes-center {
+            @include flex-j-center;
+            iframe {
+                height: 40rem;
+                margin: 5rem;
+                width: 100%;
+            }
+        }
+        .titulos {
+            color: $color_1;
+            text-align: center;
+            padding: 2rem;
+            margin-bottom: 3rem;
+            font-family: $font-family_1;
+            font-size: 10rem;
+            text-decoration: underline;
+            text-decoration-style: dashed;
+        }
+        .go-top {
+            position: fixed;
+            bottom: 4rem;
+            right: 3rem;
+            width: 3rem;
+            transform: translate(50%, -50%);
+            transition: .2s;
+            animation: popup .3s ease-in-out;
+            @keyframes popup {
+                0% {
+                    width: 0rem;
+                }
+            
+                50% {
+                    width: 6rem;
+                }
+            
+                100% {
+                    width: 4rem;
+                }
+            }
+        }
+    }
+}
+
+

@@ -1,0 +1,103 @@
+
+.container-fluid {
+    display: flex;
+    flex-direction: row-reverse;
+
+    font-size: 2rem;
+    font-weight: 500;
+    background-image: url(../multimedia/Andrew.jpg);
+    background-size: cover;
+    background-position: 25% 50%;
+    @include shadow;
+    .nav-link {
+        margin: 2rem;
+        color: $color_1 !important;
+        font-family: $font-family_2;
+        color: $color_1;
+        p {
+            color: $color_1;
+        }
+    }
+    a:hover {
+        color: $color_2 !important;
+    }
+    .logo {
+        width: 8rem;
+    }
+    
+}
+.bg-body-tertiary {
+    padding: 0px !important;
+}
+
+
+.foot {
+    @include flex-j-center;
+    align-items: center;
+    background-image: url(../multimedia/Andrew.jpg);
+    height: 20vh;
+    background-size: cover;
+    background-position: 25% 50%;
+    margin-top: 6rem;
+    .gif-gato-footer{
+        width: 7rem;
+        border-radius: 50%;
+    }
+    .iconosFooter {
+        width: 4rem;
+    }
+
+article {
+    display: flex;
+    justify-content: center;
+	position: relative;
+	width: 8rem;
+	transition: all .3s ease;
+
+    img {
+        &:first-child { box-shadow: 0 60px 60px -60px rgba(0,30,255,0.5);
+        border-radius: 50%;
+        object-fit: cover;
+        width: 7rem;
+    }
+    & {
+        &:last-child {
+            position: absolute;
+            border-radius: 50%;
+            width: 6rem;
+            bottom: 35px;
+            left: 0;
+            right: 0;
+            margin: auto;
+            transform: translateY(25%);
+            transition: .3s ease;
+            opacity: 0;
+        }
+    }
+}
+	&:hover {
+		transform: perspective(140px) rotateX(10deg) translateY(-5%) translateZ(0);
+		&::before {
+			opacity: 1;
+		}
+		img {
+			&:last-child {
+				opacity: 1;
+				transform: translateY(10%);
+			}
+		}
+	}
+	&::before {
+		content: '';
+		position: absolute;
+		bottom: 0;
+		height: 100%;
+		width: 100%;
+		background-image: linear-gradient(to bottom, transparent 10%, rgba(0,0,0,0.5) 50%, rgba(0,0,0) 95% );
+        border-radius: 29%;
+		opacity: 0;
+		transition: all .3s ease;
+	}
+}
+
+}

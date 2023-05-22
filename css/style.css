@@ -1,0 +1,850 @@
+.container-fluid {
+  display: flex;
+  flex-direction: row-reverse;
+  font-size: 2rem;
+  font-weight: 500;
+  background-image: url(../multimedia/Andrew.jpg);
+  background-size: cover;
+  background-position: 25% 50%;
+  text-shadow: 10px 6px 5px #000000;
+}
+.container-fluid .nav-link {
+  margin: 2rem;
+  color: #ffffff !important;
+  font-family: "Minecraft-Regular";
+  color: #ffffff;
+}
+.container-fluid .nav-link p {
+  color: #ffffff;
+}
+.container-fluid a:hover {
+  color: #000000 !important;
+}
+.container-fluid .logo {
+  width: 8rem;
+}
+
+.bg-body-tertiary {
+  padding: 0px !important;
+}
+
+.foot {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../multimedia/Andrew.jpg);
+  height: 20vh;
+  background-size: cover;
+  background-position: 25% 50%;
+  margin-top: 6rem;
+}
+.foot .gif-gato-footer {
+  width: 7rem;
+  border-radius: 50%;
+}
+.foot .iconosFooter {
+  width: 4rem;
+}
+.foot article {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  width: 8rem;
+  transition: all 0.3s ease;
+}
+.foot article img:first-child {
+  box-shadow: 0 60px 60px -60px rgba(0, 30, 255, 0.5);
+  border-radius: 50%;
+  object-fit: cover;
+  width: 7rem;
+}
+.foot article img:last-child {
+  position: absolute;
+  border-radius: 50%;
+  width: 6rem;
+  bottom: 35px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  transform: translateY(25%);
+  transition: 0.3s ease;
+  opacity: 0;
+}
+.foot article:hover {
+  transform: perspective(140px) rotateX(10deg) translateY(-5%) translateZ(0);
+}
+.foot article:hover::before {
+  opacity: 1;
+}
+.foot article:hover img:last-child {
+  opacity: 1;
+  transform: translateY(10%);
+}
+.foot article::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(to bottom, transparent 10%, rgba(0, 0, 0, 0.5) 50%, rgb(0, 0, 0) 95%);
+  border-radius: 29%;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+* body {
+  background-image: url(../multimedia/fondo.png);
+  background-position: center center;
+  background-size: cover;
+}
+* body h2 {
+  font-family: "ARCADECLASSIC";
+  font-size: 3rem !important;
+}
+* body img {
+  width: 40%;
+  margin: 1rem;
+}
+* body .iframes-center {
+  display: flex;
+  justify-content: center;
+}
+* body .iframes-center iframe {
+  height: 40rem;
+  margin: 5rem;
+  width: 100%;
+}
+* body .titulos {
+  color: #ffffff;
+  text-align: center;
+  padding: 2rem;
+  margin-bottom: 3rem;
+  font-family: "ARCADECLASSIC";
+  font-size: 10rem;
+  text-decoration: underline;
+  text-decoration-style: dashed;
+}
+* body .go-top {
+  position: fixed;
+  bottom: 4rem;
+  right: 3rem;
+  width: 3rem;
+  transform: translate(50%, -50%);
+  transition: 0.2s;
+  animation: popup 0.3s ease-in-out;
+}
+@keyframes popup {
+  0% {
+    width: 0rem;
+  }
+  50% {
+    width: 6rem;
+  }
+  100% {
+    width: 4rem;
+  }
+}
+
+@font-face {
+  font-family: "ARCADECLASSIC";
+  src: url("../fonts/ARCADECLASSIC.TTF") format("truetype");
+}
+@font-face {
+  font-family: "Minecraft-Regular";
+  src: url("../fonts/Minecraft-Regular.otf") format("truetype");
+}
+@font-face {
+  font-family: "LoveGlitch";
+  src: url(../fonts/LoveGlitch.ttf);
+}
+@font-face {
+  font-family: "UglyByte";
+  src: url(../fonts/UglyByte.otf);
+}
+@font-face {
+  font-family: "Montserrat-Italic";
+  src: url(../fonts/Montserrat-Italic.ttf);
+}
+.iBox {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 5rem;
+}
+.iBox .boxI {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 45%;
+  height: 40rem;
+  margin: 0.5rem;
+  text-decoration: none;
+}
+.iBox .boxI:hover {
+  color: #000000 !important;
+}
+.iBox .boxI .titulosIhover {
+  text-shadow: 10px 6px 5px #000000;
+}
+.iBox .u {
+  background-image: url(../multimedia/index/cod.png);
+  background-position: 10% 50%;
+  background-size: cover;
+  color: #ffffff;
+}
+.iBox .d {
+  background-image: url(../multimedia/index/fh.png);
+  background-position: 75% 50%;
+  background-size: cover;
+  color: #ffffff;
+}
+.iBox .t {
+  background-image: url(../multimedia/index/cbp.png);
+  background-position: 40% 50%;
+  background-size: cover;
+  color: #ffffff;
+}
+.iBox .c {
+  background-image: url(../multimedia/index/hzd.png);
+  background-size: cover;
+  color: #ffffff;
+}
+
+.tituloC {
+  text-align: center;
+  margin: 0rem;
+}
+.tituloC .titulosJuegos {
+  width: 35rem;
+  margin: 1rem;
+  padding: 1rem;
+}
+
+.gdbh {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.texto {
+  color: #ffffff;
+  text-align: center;
+  font-size: 3vh;
+  padding: 2rem;
+  font-family: "Montserrat-Italic";
+  font-style: italic;
+}
+
+.f-oscuro {
+  color: #ffffff;
+  background-image: linear-gradient(60deg, #0E1014 0%, #1D2227 100%);
+  padding: 3rem;
+}
+
+.ext-margin-titulos {
+  margin: 9rem;
+}
+
+.txt-vid-cbp {
+  font-size: 2vh;
+  margin-top: -5rem;
+}
+
+.color-table {
+  color: #ffffff !important;
+}
+
+.gdbh .carousel {
+  width: 75% !important;
+}
+
+.tabla {
+  display: flex;
+  justify-content: center;
+  margin: 4rem;
+  padding: 0px;
+}
+.tabla table {
+  width: 50% !important;
+  height: 15rem;
+  border: 4px dashed #ffffff;
+}
+.tabla table .table-size {
+  font-size: 1.3rem;
+}
+
+.quienYo {
+  display: grid;
+  grid-template-columns: 0.5fr 1fr 1fr 0.5fr;
+  grid-template-rows: 2.5fr 0.5fr 1.5fr 1.5fr;
+  grid-auto-columns: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "textos textos textos fotoPerfil" "plataformas plataformas plataformas plataformas" "plataformas-ind plataformas-ind plataformas-ind plataformas-ind" "plataformas-ind plataformas-ind plataformas-ind plataformas-ind";
+  justify-items: stretch;
+  width: 100%;
+}
+.quienYo .textos {
+  color: #ffffff;
+  grid-area: textos;
+  font-family: "Montserrat-Italic";
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  padding: 5rem;
+}
+.quienYo .fotoPerfil {
+  grid-area: fotoPerfil;
+  display: flex;
+  align-items: center;
+  width: 30rem;
+  padding: 2rem;
+}
+.quienYo .fotoPerfil .gifGato {
+  width: 90%;
+  border-radius: 50%;
+  padding: 1rem;
+  margin-bottom: 2rem;
+}
+.quienYo .plataformas {
+  grid-area: plataformas;
+  font-family: "ARCADECLASSIC";
+  text-align: center;
+  font-size: 6rem;
+  text-shadow: 10px 6px 5px #424949;
+  padding: 0px;
+}
+.quienYo .plataformas-ind {
+  grid-area: plataformas-ind;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.quienYo .plataformas-ind .desc {
+  color: #ffffff;
+}
+.quienYo .plataformas-ind .logoSteam {
+  grid-area: logoSteam;
+  padding-left: 8rem;
+  width: 25%;
+}
+.quienYo .plataformas-ind .descripcionSteam {
+  grid-area: descripcionSteam;
+  font-family: "Montserrat-Italic";
+  font-size: 4vh;
+  width: 25%;
+}
+.quienYo .plataformas-ind .descripcionEpic {
+  grid-area: descripcionEpic;
+  display: flex;
+  justify-content: flex-end;
+  font-family: "Montserrat-Italic";
+  font-size: 4vh;
+  width: 25%;
+}
+.quienYo .plataformas-ind .logoEpic {
+  grid-area: logoEpic;
+  display: flex;
+  justify-content: center;
+  width: 25%;
+}
+.quienYo .plataformas-ind .logoEpic .logo-epic {
+  width: 7rem;
+}
+.quienYo .plataformas-ind .logoUplay {
+  grid-area: logoUplay;
+  display: flex;
+  justify-content: center;
+  width: 25%;
+}
+.quienYo .plataformas-ind .logoUplay .logo-uplay {
+  width: 7rem;
+}
+.quienYo .plataformas-ind .descripcionUplay {
+  grid-area: descripcionUplay;
+  display: flex;
+  justify-content: flex-end;
+  font-family: "Montserrat-Italic";
+  font-size: 4vh;
+  width: 25%;
+}
+.quienYo .plataformas-ind .logoBlizzard {
+  grid-area: logoBlizzard;
+  padding-left: 5rem;
+  width: 25%;
+}
+.quienYo .plataformas-ind .logoBlizzard .blizzard {
+  width: 13rem;
+}
+.quienYo .plataformas-ind .descripcionBlizzard {
+  grid-area: descripcionBlizzard;
+  width: 25%;
+  font-size: 4vh;
+}
+.quienYo .plataformas-ind .descripcionBlizzard .fontBlizz {
+  font-family: "Montserrat-Italic";
+  font-size: 4vh;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  margin: 10rem;
+}
+form .formulario {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+form .formulario .form-label {
+  color: #ffffff;
+  font-family: "ARCADECLASSIC";
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+.btn-primary {
+  margin: 10px;
+  width: 5rem;
+  height: 3rem;
+  font-family: "ARCADECLASSIC" !important;
+  font-size: 1.5rem !important;
+  --bs-btn-color: #fff;
+  --bs-btn-bg: #2E4053 !important;
+  --bs-btn-border-color: #2E4053 !important;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #0a0d11 !important;
+  --bs-btn-hover-border-color: #0a0d11 !important;
+  --bs-btn-focus-shadow-rgb: 49, 132, 253;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #2E4053 !important;
+  --bs-btn-active-border-color: #2E4053 !important;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #fff;
+  --bs-btn-disabled-bg: #2E4053 !important;
+  --bs-btn-disabled-border-color: #2E4053 !important;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.card {
+  width: 20rem;
+  margin: 1rem !important;
+}
+
+.card-body {
+  color: #ffffff !important;
+}
+
+.correccion-hg {
+  height: 22rem !important;
+}
+
+.correccion-hg-l {
+  height: 22rem !important;
+}
+
+.img-fluid {
+  height: 28rem !important;
+  width: 20rem !important;
+}
+
+.card-img-top {
+  width: 91% !important;
+}
+
+.correccion-img-w {
+  width: 89% !important;
+}
+
+@media screen and (max-width: 1320px) {
+  .container-fluid {
+    font-size: 1.3rem;
+  }
+  .titulosIhover {
+    font-size: 2.5rem !important;
+  }
+  .texto {
+    font-size: 2rem;
+  }
+  iframe {
+    height: 40rem;
+    width: 80%;
+  }
+  .tabla {
+    margin: 3rem;
+  }
+  .tabla table {
+    width: 90% !important;
+  }
+  .tabla table .table-size {
+    font-size: 1.5rem;
+  }
+  .gdbh {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .gdbh .carousel {
+    width: 80% !important;
+  }
+  .quienYo {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .quienYo .plataformas-ind {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .quienYo .plataformas-ind .logo-steam {
+    width: 65%;
+  }
+  .quienYo .plataformas-ind .logoBlizzard {
+    padding-left: 3rem;
+  }
+  .quienYo .textos {
+    padding: 0;
+    margin: 2rem;
+    font-size: 1.6rem;
+    text-align: center;
+  }
+  .quienYo .fotoPerfil {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .quienYo .fotoPerfil .gifGato {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 948px) {
+  body {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  body .titulos {
+    font-size: 5rem;
+    padding: 0px;
+    padding-bottom: 2rem;
+  }
+  body .iBox {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    margin: 0;
+    width: 100%;
+  }
+  body .iBox .boxI {
+    width: 40%;
+    border-radius: 50%;
+    height: 34vh;
+    margin: 0.5rem;
+  }
+  body .iBox .boxI .titulosIhover {
+    font-size: 1.1rem !important;
+  }
+  body iframe {
+    height: 25rem;
+    width: 80%;
+  }
+  body .tituloC {
+    width: 100%;
+  }
+  body .gdbh {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  body .gdbh .carousel {
+    width: 90% !important;
+  }
+  body .tabla {
+    margin: 2rem;
+  }
+  body .tabla table {
+    width: 80% !important;
+  }
+  body .tabla table .table-size {
+    font-size: 1.5rem;
+  }
+  body .texto {
+    font-size: 1.3rem;
+  }
+  body .quienYo {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  body .quienYo .textos {
+    padding: 0;
+    margin: 2rem;
+    font-size: 1.6rem;
+    text-align: center;
+  }
+  body .quienYo .fotoPerfil {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  body .quienYo .fotoPerfil .gifGato {
+    width: 70%;
+  }
+  body .quienYo .plataformas {
+    font-size: 2rem;
+    height: 3.5rem;
+  }
+  body .quienYo .plataformas-ind {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 2rem;
+  }
+  body .quienYo .plataformas-ind .desc {
+    padding: 0;
+    margin: 0;
+  }
+  body .quienYo .plataformas-ind .logoSteam {
+    width: 50%;
+    padding: 0;
+  }
+  body .quienYo .plataformas-ind .logoSteam .logo-steam {
+    width: 7rem;
+    padding-left: 3rem;
+  }
+  body .quienYo .plataformas-ind .descripcionSteam {
+    width: 50%;
+  }
+  body .quienYo .plataformas-ind .descripcionEpic {
+    display: flex;
+    justify-content: flex-end;
+    width: 50%;
+  }
+  body .quienYo .plataformas-ind .logoEpic {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+  }
+  body .quienYo .plataformas-ind .logoEpic .logo-epic {
+    width: 4rem;
+  }
+  body .quienYo .plataformas-ind .logoUplay {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+  }
+  body .quienYo .plataformas-ind .logoUplay .logo-uplay {
+    width: 4rem;
+  }
+  body .quienYo .plataformas-ind .descripcionUplay {
+    display: flex;
+    justify-content: flex-end;
+    width: 50%;
+  }
+  body .quienYo .plataformas-ind .descripcionBlizzard {
+    width: 50%;
+  }
+  body .quienYo .plataformas-ind .logoBlizzard {
+    padding-left: 0;
+    width: 50%;
+  }
+  body .quienYo .plataformas-ind .logoBlizzard .blizzard {
+    width: 8rem;
+  }
+  body form {
+    margin: 2rem;
+  }
+}
+@media screen and (max-width: 479px) {
+  body {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  body .titulos {
+    font-size: 4rem;
+    padding: 0px;
+    padding-bottom: 1rem;
+  }
+  body .iBox {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    margin: 0;
+    padding: 0;
+  }
+  body .iBox .boxI {
+    width: 95%;
+    border-radius: 50%;
+    margin: 0.5rem;
+    height: 21rem;
+    padding: 0;
+  }
+  body .iBox .boxI .titulosIhover {
+    font-size: 1.5rem !important;
+  }
+  body iframe {
+    height: 25rem;
+    width: 80%;
+  }
+  body .go-top {
+    position: fixed;
+    bottom: 3rem;
+    right: 3.5rem;
+    width: 3rem;
+    transform: translate(99%, -27%);
+    transition: 0.2s;
+    animation: popup 0.3s ease-in-out;
+  }
+  body .tituloC {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 0;
+  }
+  body .tituloC .titulosJuegos {
+    width: 100%;
+    margin: 0;
+    padding: 3rem;
+  }
+  body .tituloC .ext-margin-titulos {
+    margin: 0rem;
+  }
+  body .gdbh {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  body .gdbh .carousel {
+    width: 90% !important;
+  }
+  body .texto {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    font-size: 1.3rem;
+  }
+  body .txt-vid-cbp {
+    font-size: 1.5vh;
+  }
+  body .tabla {
+    margin: 1rem;
+  }
+  body .tabla table {
+    width: 80% !important;
+    border: 4px dashed #ffffff;
+  }
+  body .tabla table .table-size {
+    font-size: 1rem;
+  }
+  .quienYo {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .quienYo .textos {
+    padding: 0;
+    margin: 2rem;
+    font-size: 1.3rem;
+    text-align: center;
+  }
+  .quienYo .fotoPerfil {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+  }
+  .quienYo .fotoPerfil .gifGato {
+    width: 80%;
+  }
+  .quienYo .plataformas {
+    font-size: 2rem;
+    height: 3.5rem;
+  }
+  .quienYo .plataformas-ind {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 2rem;
+  }
+  .quienYo .plataformas-ind .desc {
+    padding: 0;
+    margin: 0;
+  }
+  .quienYo .plataformas-ind .logoSteam {
+    width: 50%;
+    padding: 0;
+  }
+  .quienYo .plataformas-ind .logoSteam .logo-steam {
+    width: 7rem;
+    padding-left: 3rem;
+  }
+  .quienYo .plataformas-ind .descripcionSteam {
+    width: 50%;
+  }
+  .quienYo .plataformas-ind .descripcionEpic {
+    display: flex;
+    justify-content: flex-end;
+    width: 50%;
+  }
+  .quienYo .plataformas-ind .logoEpic {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+  }
+  .quienYo .plataformas-ind .logoEpic .logo-epic {
+    width: 4rem;
+  }
+  .quienYo .plataformas-ind .logoUplay {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+  }
+  .quienYo .plataformas-ind .logoUplay .logo-uplay {
+    width: 4rem;
+  }
+  .quienYo .plataformas-ind .descripcionUplay {
+    display: flex;
+    justify-content: flex-end;
+    width: 50%;
+  }
+  .quienYo .plataformas-ind .descripcionBlizzard {
+    width: 50%;
+  }
+  .quienYo .plataformas-ind .logoBlizzard {
+    padding-left: 0;
+    width: 50%;
+  }
+  .quienYo .plataformas-ind .logoBlizzard .blizzard {
+    width: 8rem;
+  }
+  form {
+    margin: 2rem;
+  }
+  .cards {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

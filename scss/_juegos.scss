@@ -1,0 +1,31 @@
+.tituloC {
+    text-align: center;
+    margin: 0rem;
+
+    .titulosJuegos {
+        width: 35rem;
+        margin: 1rem;
+        padding: 1rem;
+    }
+}
+
+.gdbh {
+    @include flex-j-center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.texto {
+    color: $color_1;
+    text-align: center;
+    font-size: 3vh;
+    padding: 2rem;
+    font-family: $font-family_3;
+    font-style: italic;
+}
+
+.f-oscuro {
+    color: $color_1;
+    background-image: linear-gradient(60deg, #0E1014 0%, #1D2227 100%);
+    padding: 3rem;
+}

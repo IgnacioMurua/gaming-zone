@@ -1,0 +1,18 @@
+@mixin img-cuadricula {
+    background-size: cover;
+    color: $color_1;
+}
+
+@mixin shadow{
+    text-shadow: 10px 6px 5px $color_2;
+}
+
+@mixin flex-j-center {
+    display: flex;
+    justify-content: center;
+}
+@mixin txt-descripcion{
+    font-family: $font-family_3;
+    font-size: 4vh;
+    width: 25%;
+}
