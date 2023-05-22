@@ -106,10 +106,6 @@
   font-family: "ARCADECLASSIC";
   font-size: 3rem !important;
 }
-* body img {
-  width: 40%;
-  margin: 1rem;
-}
 * body .iframes-center {
   display: flex;
   justify-content: center;
@@ -230,6 +226,10 @@
   justify-content: center;
   flex-direction: row;
   flex-wrap: wrap;
+}
+.gdbh .img-juegos {
+  width: 40%;
+  margin: 1rem;
 }
 
 .texto {
@@ -732,6 +732,9 @@ form .formulario .form-label {
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
+  }
+  body .gdbh .img-juegos {
+    width: 90%;
   }
   body .gdbh .carousel {
     width: 90% !important;

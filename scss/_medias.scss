@@ -303,11 +303,14 @@
 
         }
 
-        .gdbh {
+        .gdbh{
             @include flex-j-center;
             flex-direction: column;
             flex-wrap: wrap;
             align-items: center;
+            .img-juegos{
+                width: 90%;
+            }
             .carousel{
                 width: 90% !important;
             }

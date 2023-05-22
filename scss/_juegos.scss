@@ -9,10 +9,15 @@
     }
 }
 
-.gdbh {
+.gdbh{
     @include flex-j-center;
     flex-direction: row;
     flex-wrap: wrap;
+    .img-juegos{
+        width: 40%;
+        margin: 1rem;
+    }
+
 }
 
 .texto {

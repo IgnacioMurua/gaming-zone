@@ -10,11 +10,6 @@
             font-family: $font-family_1;
             font-size: 3rem !important;
         }
-        
-        img {
-            width: 40%;
-            margin: 1rem;
-        }
         .iframes-center {
             @include flex-j-center;
             iframe {
