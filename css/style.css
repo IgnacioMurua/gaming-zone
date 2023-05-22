@@ -334,6 +334,9 @@
   padding-left: 8rem;
   width: 25%;
 }
+.quienYo .plataformas-ind .logoSteam .logo-steam {
+  width: 7rem;
+}
 .quienYo .plataformas-ind .descripcionSteam {
   grid-area: descripcionSteam;
   font-family: "Montserrat-Italic";
@@ -440,6 +443,8 @@ form .formulario .form-label {
 }
 
 .card {
+  display: flex;
+  justify-content: center;
   width: 20rem;
   margin: 1rem !important;
 }
@@ -448,25 +453,17 @@ form .formulario .form-label {
   color: #ffffff !important;
 }
 
-.correccion-hg {
-  height: 22rem !important;
-}
-
-.correccion-hg-l {
-  height: 22rem !important;
-}
-
 .img-fluid {
   height: 28rem !important;
-  width: 20rem !important;
+  width: 30rem !important;
 }
 
 .card-img-top {
-  width: 91% !important;
+  width: 100% !important;
 }
 
 .correccion-img-w {
-  width: 89% !important;
+  width: 100% !important;
 }
 
 @media screen and (max-width: 1320px) {
@@ -511,6 +508,7 @@ form .formulario .form-label {
     justify-content: center;
     flex-wrap: wrap;
     align-items: center;
+    row-gap: 4rem;
   }
   .quienYo .plataformas-ind .logo-steam {
     width: 65%;

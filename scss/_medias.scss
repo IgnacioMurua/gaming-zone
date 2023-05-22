@@ -43,6 +43,7 @@
             @include flex-j-center;
             flex-wrap: wrap;
             align-items: center;
+            row-gap: 4rem;
             .logo-steam{
                 width: 65%;
             }

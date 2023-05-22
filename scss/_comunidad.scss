@@ -6,6 +6,7 @@
 }
 
 .card {
+    @include flex-j-center;
     width: 20rem;
     margin: 1rem !important;
 }
@@ -14,22 +15,16 @@
     color: $color_1 !important;
 }
 
-.correccion-hg{
-    height: 22rem !important;
-}
-.correccion-hg-l{
-    height: 22rem !important;
-}
 
 .img-fluid {
     height: 28rem !important;
-    width: 20rem !important;
+    width: 30rem !important;
 }
 
 .card-img-top{
-    width: 91% !important;
+    width: 100% !important;
     
 }
 .correccion-img-w{
-    width: 89% !important;
+    width: 100% !important;
 }

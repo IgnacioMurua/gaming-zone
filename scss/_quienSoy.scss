@@ -56,10 +56,13 @@
             color: $color_1;
         }
 
-        .logoSteam {
+        .logoSteam{
             grid-area: logoSteam;
             padding-left: 8rem;
             width: 25%;
+            .logo-steam{
+                width: 7rem;
+            }
         }
 
         .descripcionSteam {
