@@ -9,6 +9,11 @@
     background-size: cover;
     background-position: 25% 50%;
     @include shadow;
+        .navbar-toggler{
+            background-color: $color_4 ;
+            opacity: 80%;
+        }
+
     .nav-link {
         margin: 2rem;
         color: $color_1 !important;
@@ -26,6 +31,7 @@
     }
     
 }
+
 .bg-body-tertiary {
     padding: 0px !important;
 }
@@ -47,7 +53,7 @@
         width: 4rem;
     }
 
-article {
+.animacion-foot{
     display: flex;
     justify-content: center;
 	position: relative;

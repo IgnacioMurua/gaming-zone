@@ -245,7 +245,22 @@
     body {
         display: grid;
         grid-template-columns: 1fr;
-
+        .container-fluid {
+            display: flex;
+            flex-direction: row-reverse;
+        
+            font-size: 2rem;
+            font-weight: 500;
+            background-image: url(../multimedia/Andrew.jpg);
+            background-size: cover;
+            background-position: 25% 50%;
+            @include shadow;
+            button{
+                .navbar-toggler{
+                    border: 9px solid !important;
+                }
+            }
+        }
         .titulos {
             font-size: 4rem;
             padding: 0px;

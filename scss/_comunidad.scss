@@ -3,28 +3,29 @@
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
+    .card {
+        @include flex-j-center;
+        width: 20rem;
+        margin: 1rem !important;
+        .card-body {
+            color: $color_1 !important;
+            .card-title{
+                font-size: 1.5rem !important;
+            }
+            .card-img-top{
+                width: 100% !important; 
+            }
+            .correccion-img-w{
+                width: 100% !important;
+            }
+        }
+    }
 }
 
-.card {
-    @include flex-j-center;
-    width: 20rem;
-    margin: 1rem !important;
-}
-
-.card-body {
-    color: $color_1 !important;
-}
 
 
-.img-fluid {
-    height: 28rem !important;
-    width: 30rem !important;
-}
 
-.card-img-top{
-    width: 100% !important;
-    
-}
-.correccion-img-w{
-    width: 100% !important;
-}
+
+
+
+

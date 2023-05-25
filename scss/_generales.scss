@@ -6,10 +6,6 @@
         background-image: url(../multimedia/fondo.png);
         background-position: center center;
         background-size: cover;
-        h2 {
-            font-family: $font-family_1;
-            font-size: 3rem !important;
-        }
         .iframes-center {
             @include flex-j-center;
             iframe {

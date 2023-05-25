@@ -9,11 +9,11 @@
         height: 40rem;
         margin: 0.5rem;
         text-decoration: none;
+        font-family: $font-family_1;
+        font-size: 2rem !important;
+        @include shadow;
         &:hover {
             color: $color_2 !important;
-        }
-        .titulosIhover {
-            @include shadow;
         }
     }
     .u {
