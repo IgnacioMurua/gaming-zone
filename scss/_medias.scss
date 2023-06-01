@@ -2,10 +2,7 @@
     .container-fluid {
         font-size: 1.3rem;
     }
-
-    .titulosIhover {
-        font-size: 2.5rem !important;
-    }
+    
     .texto{
         font-size: 2rem;
     }
@@ -26,7 +23,7 @@
         }
     }
 
-    .gdbh {
+    .contenedorImgJuegos{
         @include flex-j-center;
         flex-wrap: wrap;
         align-items: center;
@@ -35,7 +32,7 @@
         }
     }
 
-    .quienYo {
+    .containerGrid{
         display: flex;
         flex-direction: column;
         width: 100%;
@@ -78,28 +75,25 @@
         display: grid;
         grid-template-columns: 1fr;
 
-        .titulos {
+        .titulosPagina {
             font-size: 5rem;
             padding: 0px;
             padding-bottom: 2rem;
         }
 
-        .iBox {
+        .contenedorPadre {
             display: flex;
             flex-direction: row;
             align-content: center;
             margin: 0;
             width: 100%;
 
-            .boxI {
+            .imagenesIndex {
                 width: 40%;
                 border-radius: 50%;
                 height: 34vh;
                 margin: 0.5rem;
-
-                .titulosIhover {
-                    font-size: 1.1rem !important;
-                }
+                font-size: 1.1rem !important;
             }
         }
 
@@ -108,10 +102,10 @@
             width: 80%;
         }
 
-        .tituloC {
+        .contenedorLogo {
             width: 100%;
         }
-        .gdbh {
+        .contenedorImgJuegos{
             @include flex-j-center;
             flex-wrap: wrap;
             align-items: center;
@@ -132,11 +126,8 @@
                 }
             }
         }
-        .texto{
-            font-size: 1.3rem;
-        }
 
-        .quienYo {
+        .containerGrid{
             display: flex;
             flex-direction: column;
             width: 100%;
@@ -161,7 +152,6 @@
             .plataformas {
                 font-size: 2rem;
                 height: 3.5rem;
-    
             }
     
             .plataformas-ind {
@@ -261,29 +251,26 @@
                 }
             }
         }
-        .titulos {
+        .titulosPagina {
             font-size: 4rem;
             padding: 0px;
             padding-bottom: 1rem;
         }
 
-        .iBox {
+        .contenedorPadre {
             display: flex;
             flex-direction: column;
             align-content: center;
             margin: 0;
             padding: 0;
 
-            .boxI {
+            .imagenesIndex {
                 width: 95%;
                 border-radius: 50%;
                 margin: 0.5rem;
                 height: 21rem;
                 padding: 0;
-
-                .titulosIhover {
-                    font-size: 1.5rem !important;
-                }
+                font-size: 1.5rem !important;
             }
         }
 
@@ -302,7 +289,7 @@
             animation: popup .3s ease-in-out;
         }
 
-        .tituloC {
+        .contenedorImgJuegos{
             @include flex-j-center;
             width: 100%;
             margin: 0;
@@ -319,7 +306,7 @@
 
         }
 
-        .gdbh{
+        .contenedorImgJuegos{
             @include flex-j-center;
             flex-direction: column;
             flex-wrap: wrap;
@@ -330,12 +317,6 @@
             .carousel{
                 width: 90% !important;
             }
-        }
-
-        .texto {
-            padding-left: 1rem;
-            padding-right: 1rem;
-            font-size: 1.3rem;
         }
 
         .txt-vid-cbp {
@@ -356,7 +337,7 @@
         }
     }
 
-    .quienYo {
+    .containerGrid{
         display: flex;
         flex-direction: column;
         width: 100%;

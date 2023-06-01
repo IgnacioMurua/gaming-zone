@@ -5,7 +5,7 @@
 
     font-size: 2rem;
     font-weight: 500;
-    background-image: url(../multimedia/Andrew.jpg);
+    background-image: url(../multimedia/AndrewFaded.png);
     background-size: cover;
     background-position: 25% 50%;
     @include shadow;
@@ -36,11 +36,10 @@
     padding: 0px !important;
 }
 
-
 .foot {
     @include flex-j-center;
     align-items: center;
-    background-image: url(../multimedia/Andrew.jpg);
+    background-image: url(../multimedia/AndrewFaded.png);
     height: 20vh;
     background-size: cover;
     background-position: 25% 50%;

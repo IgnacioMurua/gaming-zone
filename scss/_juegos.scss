@@ -1,4 +1,4 @@
-.tituloC {
+.contenedorLogo {
     text-align: center;
     margin: 0rem;
 
@@ -9,7 +9,7 @@
     }
 }
 
-.gdbh{
+.contenedorImgJuegos{
     @include flex-j-center;
     flex-direction: row;
     flex-wrap: wrap;
@@ -18,15 +18,6 @@
         margin: 1rem;
     }
 
-}
-
-.texto {
-    color: $color_1;
-    text-align: center;
-    font-size: 3vh;
-    padding: 2rem;
-    font-family: $font-family_3;
-    font-style: italic;
 }
 
 .f-oscuro {

@@ -1,8 +1,8 @@
-.iBox {
+.contenedorPadre {
     @include flex-j-center;
     flex-wrap: wrap;
     margin: 5rem;
-    .boxI {
+    .imagenesIndex{
         @include flex-j-center;
         align-items: center;
         width: 45%;
@@ -16,25 +16,25 @@
             color: $color_2 !important;
         }
     }
-    .u {
+    .primera {
         background-image: url(../multimedia/index/cod.png);
         background-position: 10% 50%;
         @include img-cuadricula;
     }
     
-    .d {
+    .segunda {
         background-image: url(../multimedia/index/fh.png);
         background-position: 75% 50%;
         @include img-cuadricula;
     }
     
-    .t {
+    .tercera {
         background-image: url(../multimedia/index/cbp.png);
         background-position: 40% 50%;
         @include img-cuadricula;
     }
     
-    .c {
+    .cuarta {
         background-image: url(../multimedia/index/hzd.png);
         @include img-cuadricula;
     }

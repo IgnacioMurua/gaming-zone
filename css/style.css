@@ -3,7 +3,7 @@
   flex-direction: row-reverse;
   font-size: 2rem;
   font-weight: 500;
-  background-image: url(../multimedia/Andrew.jpg);
+  background-image: url(../multimedia/AndrewFaded.png);
   background-size: cover;
   background-position: 25% 50%;
   text-shadow: 10px 6px 5px #000000;
@@ -36,7 +36,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url(../multimedia/Andrew.jpg);
+  background-image: url(../multimedia/AndrewFaded.png);
   height: 20vh;
   background-size: cover;
   background-position: 25% 50%;
@@ -105,6 +105,10 @@
   background-image: url(../multimedia/fondo.png);
   background-position: center center;
   background-size: cover;
+  cursor: url(../multimedia/puntero.png), auto;
+}
+* body a {
+  cursor: url(../multimedia/hacer-clic.png), auto;
 }
 * body .iframes-center {
   display: flex;
@@ -115,7 +119,7 @@
   margin: 5rem;
   width: 100%;
 }
-* body .titulos {
+* body .titulosPagina {
   color: #ffffff;
   text-align: center;
   padding: 2rem;
@@ -124,6 +128,16 @@
   font-size: 10rem;
   text-decoration: underline;
   text-decoration-style: dashed;
+}
+* body .textos {
+  color: #ffffff;
+  grid-area: textos;
+  font-family: "Montserrat-Italic";
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  padding: 5rem;
+  font-style: italic;
+  text-indent: 1rem;
 }
 * body .go-top {
   position: fixed;
@@ -166,13 +180,13 @@
   font-family: "Montserrat-Italic";
   src: url(../fonts/Montserrat-Italic.ttf);
 }
-.iBox {
+.contenedorPadre {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   margin: 5rem;
 }
-.iBox .boxI {
+.contenedorPadre .imagenesIndex {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -184,61 +198,52 @@
   font-size: 2rem !important;
   text-shadow: 10px 6px 5px #000000;
 }
-.iBox .boxI:hover {
+.contenedorPadre .imagenesIndex:hover {
   color: #000000 !important;
 }
-.iBox .u {
+.contenedorPadre .primera {
   background-image: url(../multimedia/index/cod.png);
   background-position: 10% 50%;
   background-size: cover;
   color: #ffffff;
 }
-.iBox .d {
+.contenedorPadre .segunda {
   background-image: url(../multimedia/index/fh.png);
   background-position: 75% 50%;
   background-size: cover;
   color: #ffffff;
 }
-.iBox .t {
+.contenedorPadre .tercera {
   background-image: url(../multimedia/index/cbp.png);
   background-position: 40% 50%;
   background-size: cover;
   color: #ffffff;
 }
-.iBox .c {
+.contenedorPadre .cuarta {
   background-image: url(../multimedia/index/hzd.png);
   background-size: cover;
   color: #ffffff;
 }
 
-.tituloC {
+.contenedorLogo {
   text-align: center;
   margin: 0rem;
 }
-.tituloC .titulosJuegos {
+.contenedorLogo .titulosJuegos {
   width: 35rem;
   margin: 1rem;
   padding: 1rem;
 }
 
-.gdbh {
+.contenedorImgJuegos {
   display: flex;
   justify-content: center;
   flex-direction: row;
   flex-wrap: wrap;
 }
-.gdbh .img-juegos {
+.contenedorImgJuegos .img-juegos {
   width: 40%;
   margin: 1rem;
-}
-
-.texto {
-  color: #ffffff;
-  text-align: center;
-  font-size: 3vh;
-  padding: 2rem;
-  font-family: "Montserrat-Italic";
-  font-style: italic;
 }
 
 .f-oscuro {
@@ -279,7 +284,7 @@
   font-size: 1.3rem;
 }
 
-.quienYo {
+.containerGrid {
   display: grid;
   grid-template-columns: 0.5fr 1fr 1fr 0.5fr;
   grid-template-rows: 2.5fr 0.5fr 1.5fr 1.5fr;
@@ -290,28 +295,20 @@
   justify-items: stretch;
   width: 100%;
 }
-.quienYo .textos {
-  color: #ffffff;
-  grid-area: textos;
-  font-family: "Montserrat-Italic";
-  font-size: 2rem;
-  margin-bottom: 2rem;
-  padding: 5rem;
-}
-.quienYo .fotoPerfil {
+.containerGrid .fotoPerfil {
   grid-area: fotoPerfil;
   display: flex;
   align-items: center;
   width: 30rem;
   padding: 2rem;
 }
-.quienYo .fotoPerfil .gifGato {
+.containerGrid .fotoPerfil .gifGato {
   width: 90%;
   border-radius: 50%;
   padding: 1rem;
   margin-bottom: 2rem;
 }
-.quienYo .plataformas {
+.containerGrid .plataformas {
   grid-area: plataformas;
   font-family: "ARCADECLASSIC";
   text-align: center;
@@ -319,31 +316,31 @@
   text-shadow: 10px 6px 5px #424949;
   padding: 0px;
 }
-.quienYo .plataformas-ind {
+.containerGrid .plataformas-ind {
   grid-area: plataformas-ind;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   align-items: center;
 }
-.quienYo .plataformas-ind .desc {
+.containerGrid .plataformas-ind .desc {
   color: #ffffff;
 }
-.quienYo .plataformas-ind .logoSteam {
+.containerGrid .plataformas-ind .logoSteam {
   grid-area: logoSteam;
   padding-left: 8rem;
   width: 25%;
 }
-.quienYo .plataformas-ind .logoSteam .logo-steam {
+.containerGrid .plataformas-ind .logoSteam .logo-steam {
   width: 7rem;
 }
-.quienYo .plataformas-ind .descripcionSteam {
+.containerGrid .plataformas-ind .descripcionSteam {
   grid-area: descripcionSteam;
   font-family: "Montserrat-Italic";
   font-size: 4vh;
   width: 25%;
 }
-.quienYo .plataformas-ind .descripcionEpic {
+.containerGrid .plataformas-ind .descripcionEpic {
   grid-area: descripcionEpic;
   display: flex;
   justify-content: flex-end;
@@ -351,25 +348,25 @@
   font-size: 4vh;
   width: 25%;
 }
-.quienYo .plataformas-ind .logoEpic {
+.containerGrid .plataformas-ind .logoEpic {
   grid-area: logoEpic;
   display: flex;
   justify-content: center;
   width: 25%;
 }
-.quienYo .plataformas-ind .logoEpic .logo-epic {
+.containerGrid .plataformas-ind .logoEpic .logo-epic {
   width: 7rem;
 }
-.quienYo .plataformas-ind .logoUplay {
+.containerGrid .plataformas-ind .logoUplay {
   grid-area: logoUplay;
   display: flex;
   justify-content: center;
   width: 25%;
 }
-.quienYo .plataformas-ind .logoUplay .logo-uplay {
+.containerGrid .plataformas-ind .logoUplay .logo-uplay {
   width: 7rem;
 }
-.quienYo .plataformas-ind .descripcionUplay {
+.containerGrid .plataformas-ind .descripcionUplay {
   grid-area: descripcionUplay;
   display: flex;
   justify-content: flex-end;
@@ -377,20 +374,20 @@
   font-size: 4vh;
   width: 25%;
 }
-.quienYo .plataformas-ind .logoBlizzard {
+.containerGrid .plataformas-ind .logoBlizzard {
   grid-area: logoBlizzard;
   padding-left: 5rem;
   width: 25%;
 }
-.quienYo .plataformas-ind .logoBlizzard .blizzard {
+.containerGrid .plataformas-ind .logoBlizzard .blizzard {
   width: 13rem;
 }
-.quienYo .plataformas-ind .descripcionBlizzard {
+.containerGrid .plataformas-ind .descripcionBlizzard {
   grid-area: descripcionBlizzard;
   width: 25%;
   font-size: 4vh;
 }
-.quienYo .plataformas-ind .descripcionBlizzard .fontBlizz {
+.containerGrid .plataformas-ind .descripcionBlizzard .fontBlizz {
   font-family: "Montserrat-Italic";
   font-size: 4vh;
 }
@@ -464,9 +461,6 @@ form .formulario .form-label {
   .container-fluid {
     font-size: 1.3rem;
   }
-  .titulosIhover {
-    font-size: 2.5rem !important;
-  }
   .texto {
     font-size: 2rem;
   }
@@ -483,45 +477,45 @@ form .formulario .form-label {
   .tabla table .table-size {
     font-size: 1.5rem;
   }
-  .gdbh {
+  .contenedorImgJuegos {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     align-items: center;
   }
-  .gdbh .carousel {
+  .contenedorImgJuegos .carousel {
     width: 80% !important;
   }
-  .quienYo {
+  .containerGrid {
     display: flex;
     flex-direction: column;
     width: 100%;
   }
-  .quienYo .plataformas-ind {
+  .containerGrid .plataformas-ind {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     align-items: center;
     row-gap: 4rem;
   }
-  .quienYo .plataformas-ind .logo-steam {
+  .containerGrid .plataformas-ind .logo-steam {
     width: 65%;
   }
-  .quienYo .plataformas-ind .logoBlizzard {
+  .containerGrid .plataformas-ind .logoBlizzard {
     padding-left: 3rem;
   }
-  .quienYo .textos {
+  .containerGrid .textos {
     padding: 0;
     margin: 2rem;
     font-size: 1.6rem;
     text-align: center;
   }
-  .quienYo .fotoPerfil {
+  .containerGrid .fotoPerfil {
     width: 100%;
     display: flex;
     justify-content: center;
   }
-  .quienYo .fotoPerfil .gifGato {
+  .containerGrid .fotoPerfil .gifGato {
     width: 50%;
   }
 }
@@ -530,41 +524,39 @@ form .formulario .form-label {
     display: grid;
     grid-template-columns: 1fr;
   }
-  body .titulos {
+  body .titulosPagina {
     font-size: 5rem;
     padding: 0px;
     padding-bottom: 2rem;
   }
-  body .iBox {
+  body .contenedorPadre {
     display: flex;
     flex-direction: row;
     align-content: center;
     margin: 0;
     width: 100%;
   }
-  body .iBox .boxI {
+  body .contenedorPadre .imagenesIndex {
     width: 40%;
     border-radius: 50%;
     height: 34vh;
     margin: 0.5rem;
-  }
-  body .iBox .boxI .titulosIhover {
     font-size: 1.1rem !important;
   }
   body iframe {
     height: 25rem;
     width: 80%;
   }
-  body .tituloC {
+  body .contenedorLogo {
     width: 100%;
   }
-  body .gdbh {
+  body .contenedorImgJuegos {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     align-items: center;
   }
-  body .gdbh .carousel {
+  body .contenedorImgJuegos .carousel {
     width: 90% !important;
   }
   body .tabla {
@@ -576,88 +568,85 @@ form .formulario .form-label {
   body .tabla table .table-size {
     font-size: 1.5rem;
   }
-  body .texto {
-    font-size: 1.3rem;
-  }
-  body .quienYo {
+  body .containerGrid {
     display: flex;
     flex-direction: column;
     width: 100%;
   }
-  body .quienYo .textos {
+  body .containerGrid .textos {
     padding: 0;
     margin: 2rem;
     font-size: 1.6rem;
     text-align: center;
   }
-  body .quienYo .fotoPerfil {
+  body .containerGrid .fotoPerfil {
     width: 100%;
     display: flex;
     justify-content: center;
   }
-  body .quienYo .fotoPerfil .gifGato {
+  body .containerGrid .fotoPerfil .gifGato {
     width: 70%;
   }
-  body .quienYo .plataformas {
+  body .containerGrid .plataformas {
     font-size: 2rem;
     height: 3.5rem;
   }
-  body .quienYo .plataformas-ind {
+  body .containerGrid .plataformas-ind {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     align-items: center;
     margin-top: 2rem;
   }
-  body .quienYo .plataformas-ind .desc {
+  body .containerGrid .plataformas-ind .desc {
     padding: 0;
     margin: 0;
   }
-  body .quienYo .plataformas-ind .logoSteam {
+  body .containerGrid .plataformas-ind .logoSteam {
     width: 50%;
     padding: 0;
   }
-  body .quienYo .plataformas-ind .logoSteam .logo-steam {
+  body .containerGrid .plataformas-ind .logoSteam .logo-steam {
     width: 7rem;
     padding-left: 3rem;
   }
-  body .quienYo .plataformas-ind .descripcionSteam {
+  body .containerGrid .plataformas-ind .descripcionSteam {
     width: 50%;
   }
-  body .quienYo .plataformas-ind .descripcionEpic {
+  body .containerGrid .plataformas-ind .descripcionEpic {
     display: flex;
     justify-content: flex-end;
     width: 50%;
   }
-  body .quienYo .plataformas-ind .logoEpic {
+  body .containerGrid .plataformas-ind .logoEpic {
     display: flex;
     justify-content: center;
     width: 50%;
   }
-  body .quienYo .plataformas-ind .logoEpic .logo-epic {
+  body .containerGrid .plataformas-ind .logoEpic .logo-epic {
     width: 4rem;
   }
-  body .quienYo .plataformas-ind .logoUplay {
+  body .containerGrid .plataformas-ind .logoUplay {
     display: flex;
     justify-content: center;
     width: 50%;
   }
-  body .quienYo .plataformas-ind .logoUplay .logo-uplay {
+  body .containerGrid .plataformas-ind .logoUplay .logo-uplay {
     width: 4rem;
   }
-  body .quienYo .plataformas-ind .descripcionUplay {
+  body .containerGrid .plataformas-ind .descripcionUplay {
     display: flex;
     justify-content: flex-end;
     width: 50%;
   }
-  body .quienYo .plataformas-ind .descripcionBlizzard {
+  body .containerGrid .plataformas-ind .descripcionBlizzard {
     width: 50%;
   }
-  body .quienYo .plataformas-ind .logoBlizzard {
+  body .containerGrid .plataformas-ind .logoBlizzard {
     padding-left: 0;
     width: 50%;
   }
-  body .quienYo .plataformas-ind .logoBlizzard .blizzard {
+  body .containerGrid .plataformas-ind .logoBlizzard .blizzard {
     width: 8rem;
   }
   body form {
@@ -682,26 +671,24 @@ form .formulario .form-label {
   body .container-fluid button .navbar-toggler {
     border: 9px solid !important;
   }
-  body .titulos {
+  body .titulosPagina {
     font-size: 4rem;
     padding: 0px;
     padding-bottom: 1rem;
   }
-  body .iBox {
+  body .contenedorPadre {
     display: flex;
     flex-direction: column;
     align-content: center;
     margin: 0;
     padding: 0;
   }
-  body .iBox .boxI {
+  body .contenedorPadre .imagenesIndex {
     width: 95%;
     border-radius: 50%;
     margin: 0.5rem;
     height: 21rem;
     padding: 0;
-  }
-  body .iBox .boxI .titulosIhover {
     font-size: 1.5rem !important;
   }
   body iframe {
@@ -717,37 +704,32 @@ form .formulario .form-label {
     transition: 0.2s;
     animation: popup 0.3s ease-in-out;
   }
-  body .tituloC {
+  body .contenedorImgJuegos {
     display: flex;
     justify-content: center;
     width: 100%;
     margin: 0;
   }
-  body .tituloC .titulosJuegos {
+  body .contenedorImgJuegos .titulosJuegos {
     width: 100%;
     margin: 0;
     padding: 3rem;
   }
-  body .tituloC .ext-margin-titulos {
+  body .contenedorImgJuegos .ext-margin-titulos {
     margin: 0rem;
   }
-  body .gdbh {
+  body .contenedorImgJuegos {
     display: flex;
     justify-content: center;
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
   }
-  body .gdbh .img-juegos {
+  body .contenedorImgJuegos .img-juegos {
     width: 90%;
   }
-  body .gdbh .carousel {
+  body .contenedorImgJuegos .carousel {
     width: 90% !important;
-  }
-  body .texto {
-    padding-left: 1rem;
-    padding-right: 1rem;
-    font-size: 1.3rem;
   }
   body .txt-vid-cbp {
     font-size: 1.5vh;
@@ -762,87 +744,87 @@ form .formulario .form-label {
   body .tabla table .table-size {
     font-size: 1rem;
   }
-  .quienYo {
+  .containerGrid {
     display: flex;
     flex-direction: column;
     width: 100%;
   }
-  .quienYo .textos {
+  .containerGrid .textos {
     padding: 0;
     margin: 2rem;
     font-size: 1.3rem;
     text-align: center;
   }
-  .quienYo .fotoPerfil {
+  .containerGrid .fotoPerfil {
     width: 100%;
     padding: 0;
     margin: 0;
     display: flex;
     justify-content: center;
   }
-  .quienYo .fotoPerfil .gifGato {
+  .containerGrid .fotoPerfil .gifGato {
     width: 80%;
   }
-  .quienYo .plataformas {
+  .containerGrid .plataformas {
     font-size: 2rem;
     height: 3.5rem;
   }
-  .quienYo .plataformas-ind {
+  .containerGrid .plataformas-ind {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     align-items: center;
     margin-top: 2rem;
   }
-  .quienYo .plataformas-ind .desc {
+  .containerGrid .plataformas-ind .desc {
     padding: 0;
     margin: 0;
   }
-  .quienYo .plataformas-ind .logoSteam {
+  .containerGrid .plataformas-ind .logoSteam {
     width: 50%;
     padding: 0;
   }
-  .quienYo .plataformas-ind .logoSteam .logo-steam {
+  .containerGrid .plataformas-ind .logoSteam .logo-steam {
     width: 7rem;
     padding-left: 3rem;
   }
-  .quienYo .plataformas-ind .descripcionSteam {
+  .containerGrid .plataformas-ind .descripcionSteam {
     width: 50%;
   }
-  .quienYo .plataformas-ind .descripcionEpic {
+  .containerGrid .plataformas-ind .descripcionEpic {
     display: flex;
     justify-content: flex-end;
     width: 50%;
   }
-  .quienYo .plataformas-ind .logoEpic {
+  .containerGrid .plataformas-ind .logoEpic {
     display: flex;
     justify-content: center;
     width: 50%;
   }
-  .quienYo .plataformas-ind .logoEpic .logo-epic {
+  .containerGrid .plataformas-ind .logoEpic .logo-epic {
     width: 4rem;
   }
-  .quienYo .plataformas-ind .logoUplay {
+  .containerGrid .plataformas-ind .logoUplay {
     display: flex;
     justify-content: center;
     width: 50%;
   }
-  .quienYo .plataformas-ind .logoUplay .logo-uplay {
+  .containerGrid .plataformas-ind .logoUplay .logo-uplay {
     width: 4rem;
   }
-  .quienYo .plataformas-ind .descripcionUplay {
+  .containerGrid .plataformas-ind .descripcionUplay {
     display: flex;
     justify-content: flex-end;
     width: 50%;
   }
-  .quienYo .plataformas-ind .descripcionBlizzard {
+  .containerGrid .plataformas-ind .descripcionBlizzard {
     width: 50%;
   }
-  .quienYo .plataformas-ind .logoBlizzard {
+  .containerGrid .plataformas-ind .logoBlizzard {
     padding-left: 0;
     width: 50%;
   }
-  .quienYo .plataformas-ind .logoBlizzard .blizzard {
+  .containerGrid .plataformas-ind .logoBlizzard .blizzard {
     width: 8rem;
   }
   form {

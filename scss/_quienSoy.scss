@@ -1,4 +1,4 @@
-.quienYo {
+.containerGrid{
     display: grid;
     grid-template-columns: 0.5fr 1fr 1fr 0.5fr;
     grid-template-rows: 2.5fr 0.5fr 1.5fr 1.5fr;
@@ -12,15 +12,6 @@
         "plataformas-ind plataformas-ind plataformas-ind plataformas-ind";
     justify-items: stretch;
     width: 100%;
-
-    .textos {
-        color: $color_1;
-        grid-area: textos;
-        font-family: $font-family_3;
-        font-size: 2rem;
-        margin-bottom: 2rem;
-        padding: 5rem;
-    }
 
     .fotoPerfil {
         grid-area: fotoPerfil;

@@ -6,6 +6,10 @@
         background-image: url(../multimedia/fondo.png);
         background-position: center center;
         background-size: cover;
+        cursor: url(../multimedia/puntero.png), auto;
+        a{
+            cursor: url(../multimedia/hacer-clic.png), auto;
+        }
         .iframes-center {
             @include flex-j-center;
             iframe {
@@ -14,7 +18,7 @@
                 width: 100%;
             }
         }
-        .titulos {
+        .titulosPagina {
             color: $color_1;
             text-align: center;
             padding: 2rem;
@@ -24,6 +28,17 @@
             text-decoration: underline;
             text-decoration-style: dashed;
         }
+        
+    .textos {
+        color: $color_1;
+        grid-area: textos;
+        font-family: $font-family_3;
+        font-size: 2rem;
+        margin-bottom: 2rem;
+        padding: 5rem;
+        font-style: italic;
+        text-indent: 1rem;
+    }
         .go-top {
             position: fixed;
             bottom: 4rem;
