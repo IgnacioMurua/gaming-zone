@@ -461,8 +461,10 @@ form .formulario .form-label {
   .container-fluid {
     font-size: 1.3rem;
   }
-  .texto {
+  .textos {
     font-size: 2rem;
+    padding: 1rem;
+    text-align: center;
   }
   iframe {
     height: 40rem;
@@ -504,12 +506,6 @@ form .formulario .form-label {
   .containerGrid .plataformas-ind .logoBlizzard {
     padding-left: 3rem;
   }
-  .containerGrid .textos {
-    padding: 0;
-    margin: 2rem;
-    font-size: 1.6rem;
-    text-align: center;
-  }
   .containerGrid .fotoPerfil {
     width: 100%;
     display: flex;
@@ -523,6 +519,12 @@ form .formulario .form-label {
   body {
     display: grid;
     grid-template-columns: 1fr;
+  }
+  body .textos {
+    padding: 0;
+    margin: 1rem;
+    font-size: 1.6rem;
+    text-align: center;
   }
   body .titulosPagina {
     font-size: 5rem;
@@ -572,12 +574,6 @@ form .formulario .form-label {
     display: flex;
     flex-direction: column;
     width: 100%;
-  }
-  body .containerGrid .textos {
-    padding: 0;
-    margin: 2rem;
-    font-size: 1.6rem;
-    text-align: center;
   }
   body .containerGrid .fotoPerfil {
     width: 100%;
@@ -658,12 +654,18 @@ form .formulario .form-label {
     display: grid;
     grid-template-columns: 1fr;
   }
+  body .textos {
+    padding: 1rem;
+    margin: 2rem;
+    font-size: 1.3rem;
+    text-align: center;
+  }
   body .container-fluid {
     display: flex;
     flex-direction: row-reverse;
     font-size: 2rem;
     font-weight: 500;
-    background-image: url(../multimedia/Andrew.jpg);
+    background-image: url(../multimedia/AndrewFaded.png);
     background-size: cover;
     background-position: 25% 50%;
     text-shadow: 10px 6px 5px #000000;
@@ -748,12 +750,6 @@ form .formulario .form-label {
     display: flex;
     flex-direction: column;
     width: 100%;
-  }
-  .containerGrid .textos {
-    padding: 0;
-    margin: 2rem;
-    font-size: 1.3rem;
-    text-align: center;
   }
   .containerGrid .fotoPerfil {
     width: 100%;

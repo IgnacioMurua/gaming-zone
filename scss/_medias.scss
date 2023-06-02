@@ -3,8 +3,10 @@
         font-size: 1.3rem;
     }
     
-    .texto{
+    .textos{
         font-size: 2rem;
+        padding: 1rem;
+        text-align: center;
     }
 
     iframe {
@@ -48,12 +50,6 @@
                 padding-left: 3rem;
             }
         }
-        .textos {
-            padding: 0;
-            margin: 2rem;
-            font-size: 1.6rem;
-            text-align: center;
-        }
 
         .fotoPerfil {
             width: 100%;
@@ -74,6 +70,14 @@
     body {
         display: grid;
         grid-template-columns: 1fr;
+
+        .textos {
+            padding: 0;
+            margin: 1rem;
+            font-size: 1.6rem;
+            text-align: center;
+        }
+
 
         .titulosPagina {
             font-size: 5rem;
@@ -131,13 +135,6 @@
             display: flex;
             flex-direction: column;
             width: 100%;
-    
-            .textos {
-                padding: 0;
-                margin: 2rem;
-                font-size: 1.6rem;
-                text-align: center;
-            }
     
             .fotoPerfil {
                 width: 100%;
@@ -235,13 +232,19 @@
     body {
         display: grid;
         grid-template-columns: 1fr;
+        .textos {
+            padding: 1rem;
+            margin: 2rem;
+            font-size: 1.3rem;
+            text-align: center;
+        }
         .container-fluid {
             display: flex;
             flex-direction: row-reverse;
         
             font-size: 2rem;
             font-weight: 500;
-            background-image: url(../multimedia/Andrew.jpg);
+            background-image: url(../multimedia/AndrewFaded.png);
             background-size: cover;
             background-position: 25% 50%;
             @include shadow;
@@ -342,12 +345,7 @@
         flex-direction: column;
         width: 100%;
 
-        .textos {
-            padding: 0;
-            margin: 2rem;
-            font-size: 1.3rem;
-            text-align: center;
-        }
+
 
         .fotoPerfil {
             width: 100%;
