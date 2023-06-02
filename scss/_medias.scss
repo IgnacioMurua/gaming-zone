@@ -2,11 +2,26 @@
     .container-fluid {
         font-size: 1.3rem;
     }
-    
+
+    .titulosPagina {
+        font-size: 7rem;
+    }
+
     .textos{
         font-size: 2rem;
         padding: 1rem;
         text-align: center;
+    }
+
+    .tituloSeparado{
+        color: $color_1;
+        text-align: center;
+        padding: 1.5rem;
+        margin-bottom: 3rem;
+        font-family: $font-family_1;
+        text-decoration: underline;
+        text-decoration-style: dashed;
+        font-size: 6rem;
     }
 
     iframe {
@@ -72,17 +87,16 @@
         grid-template-columns: 1fr;
 
         .textos {
-            padding: 0;
-            margin: 1rem;
+            padding: 1rem;
+            margin: 0;
             font-size: 1.6rem;
             text-align: center;
         }
 
 
         .titulosPagina {
-            font-size: 5rem;
-            padding: 0px;
-            padding-bottom: 2rem;
+            font-size: 4rem;
+            padding: 1rem;
         }
 
         .contenedorPadre {
@@ -234,7 +248,7 @@
         grid-template-columns: 1fr;
         .textos {
             padding: 1rem;
-            margin: 2rem;
+            margin: 0;
             font-size: 1.3rem;
             text-align: center;
         }
@@ -254,10 +268,10 @@
                 }
             }
         }
+
         .titulosPagina {
             font-size: 4rem;
-            padding: 0px;
-            padding-bottom: 1rem;
+            padding: 1rem;
         }
 
         .contenedorPadre {
@@ -292,28 +306,18 @@
             animation: popup .3s ease-in-out;
         }
 
+        .titulosJuegos {
+            width: 100%;
+            margin: 0;
+            padding: 3rem;
+        }
+
+        
         .contenedorImgJuegos{
             @include flex-j-center;
             width: 100%;
             margin: 0;
-
-            .titulosJuegos {
-                width: 100%;
-                margin: 0;
-                padding: 3rem;
-            }
-
-            .ext-margin-titulos {
-                margin: 0rem;
-            }
-
-        }
-
-        .contenedorImgJuegos{
-            @include flex-j-center;
-            flex-direction: column;
-            flex-wrap: wrap;
-            align-items: center;
+            padding: 0;
             .img-juegos{
                 width: 90%;
             }
@@ -321,6 +325,11 @@
                 width: 90% !important;
             }
         }
+        
+        .ext-margin-titulos {
+            margin: 0rem;
+        }
+
 
         .txt-vid-cbp {
             font-size: 1.5vh;

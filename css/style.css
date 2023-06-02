@@ -122,12 +122,13 @@
 * body .titulosPagina {
   color: #ffffff;
   text-align: center;
-  padding: 2rem;
+  padding: 1.5rem;
   margin-bottom: 3rem;
   font-family: "ARCADECLASSIC";
-  font-size: 10rem;
+  font-size: 8rem;
   text-decoration: underline;
   text-decoration-style: dashed;
+  letter-spacing: 1vw;
 }
 * body .textos {
   color: #ffffff;
@@ -230,7 +231,7 @@
   margin: 0rem;
 }
 .contenedorLogo .titulosJuegos {
-  width: 35rem;
+  width: 30%;
   margin: 1rem;
   padding: 1rem;
 }
@@ -265,8 +266,12 @@
   color: #ffffff !important;
 }
 
-.gdbh .carousel {
-  width: 75% !important;
+.contenedorImgJuegos {
+  display: flex;
+  justify-content: center;
+}
+.contenedorImgJuegos .carousel {
+  width: 90% !important;
 }
 
 .tabla {
@@ -461,10 +466,23 @@ form .formulario .form-label {
   .container-fluid {
     font-size: 1.3rem;
   }
+  .titulosPagina {
+    font-size: 7rem;
+  }
   .textos {
     font-size: 2rem;
     padding: 1rem;
     text-align: center;
+  }
+  .tituloSeparado {
+    color: #ffffff;
+    text-align: center;
+    padding: 1.5rem;
+    margin-bottom: 3rem;
+    font-family: "ARCADECLASSIC";
+    text-decoration: underline;
+    text-decoration-style: dashed;
+    font-size: 6rem;
   }
   iframe {
     height: 40rem;
@@ -521,15 +539,14 @@ form .formulario .form-label {
     grid-template-columns: 1fr;
   }
   body .textos {
-    padding: 0;
-    margin: 1rem;
+    padding: 1rem;
+    margin: 0;
     font-size: 1.6rem;
     text-align: center;
   }
   body .titulosPagina {
-    font-size: 5rem;
-    padding: 0px;
-    padding-bottom: 2rem;
+    font-size: 4rem;
+    padding: 1rem;
   }
   body .contenedorPadre {
     display: flex;
@@ -656,7 +673,7 @@ form .formulario .form-label {
   }
   body .textos {
     padding: 1rem;
-    margin: 2rem;
+    margin: 0;
     font-size: 1.3rem;
     text-align: center;
   }
@@ -675,8 +692,7 @@ form .formulario .form-label {
   }
   body .titulosPagina {
     font-size: 4rem;
-    padding: 0px;
-    padding-bottom: 1rem;
+    padding: 1rem;
   }
   body .contenedorPadre {
     display: flex;
@@ -706,32 +722,26 @@ form .formulario .form-label {
     transition: 0.2s;
     animation: popup 0.3s ease-in-out;
   }
-  body .contenedorImgJuegos {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    margin: 0;
-  }
-  body .contenedorImgJuegos .titulosJuegos {
+  body .titulosJuegos {
     width: 100%;
     margin: 0;
     padding: 3rem;
   }
-  body .contenedorImgJuegos .ext-margin-titulos {
-    margin: 0rem;
-  }
   body .contenedorImgJuegos {
     display: flex;
     justify-content: center;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: center;
+    width: 100%;
+    margin: 0;
+    padding: 0;
   }
   body .contenedorImgJuegos .img-juegos {
     width: 90%;
   }
   body .contenedorImgJuegos .carousel {
     width: 90% !important;
+  }
+  body .ext-margin-titulos {
+    margin: 0rem;
   }
   body .txt-vid-cbp {
     font-size: 1.5vh;

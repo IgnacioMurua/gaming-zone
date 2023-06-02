@@ -10,9 +10,10 @@
 .color-table {
     color: $color_1 !important;
 }
-.gdbh{
+.contenedorImgJuegos{
+    @include flex-j-center;
     .carousel{
-        width: 75% !important;
+        width: 90% !important;
     }
 }
 
